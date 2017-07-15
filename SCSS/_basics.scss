@@ -79,3 +79,51 @@ html {
     background-repeat: no-repeat;
     float: right;
 }
+
+.sliders-container {
+    width: 100%;
+    height: 70vh;
+//    border: 1px solid blue;
+}
+
+.slides-animating-wrapper,
+.slides-animating-list,
+.slides-switcher-list,
+.slides-animating-item {
+    width: 100%;
+    height: 100%;
+//    border: 1px dotted orange;
+}
+
+.slides-animating-list {
+    list-style-type: none;
+}
+
+.slides-animating-list {
+    margin: 0;
+    padding: 0;
+}
+
+.slides-animating-item:last-child {
+    display: none;
+    background-image: url(../graphics/HCH8K5A_ex.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slides-animating-item {
+    background-image: url(../graphics/HC-5XJU_mx.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px dotted orange;
+}
+
+.single-slide-container {
+    position: relative;
+}
+
+.single-slide-content {
+    border: 2px solid red;
+    position: absolute;
+    top: 40vh;
+}
