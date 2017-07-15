@@ -1,5 +1,81 @@
 * {
     box-sizing: border-box;
-    border: 2px solid red;
+    background-color: #1F1B0A;
 }
 
+html {
+    font-family: Arial, Helvetica, "Times New Roman", sans-serif;
+    color: #FCF7F8;
+}
+
+.container {
+    width: 100%;
+}
+
+//STYLE DLA WERSJI MOBILE
+
+//Logo-header
+.sticky-leftside-header {
+    width: 100%;
+}
+
+.logo-wrapper {
+    width: 100%;
+    height: 20vh;
+    border: 1px dotted red;
+}
+
+.logo-positioner {
+    height: 100%;
+    border: 1px solid yellow;
+    position: relative;
+}
+
+.logo-positioner:first-child {
+    display: none;
+}
+
+.logo-mobile-pic {
+    width: 100%;
+    height: 100%;
+    border: 1px dotted green;
+    position: absolute;
+}
+
+.main-menu-container {
+    width: 100%;
+    border: 1px dotted green;
+}
+
+.main-desktop-menu {
+    display: none;
+}
+
+.main-mobile-menu {
+    display: none;
+}
+
+.main-menu-footer {
+    display: none;
+}
+
+.mobile-menu-wrapper {
+    width: 100%;
+    height: 10vh;
+    border: 1px dotted yellow;
+}
+
+.mobile-icon-wrapper {
+    width: 100%;
+    height: 100%;
+//    position: relative;
+}
+
+.mobile-menu-icon {
+    width: 15%;
+    height: 100%;
+    background-image: url(../graphics/Hamburger%20menu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+}
