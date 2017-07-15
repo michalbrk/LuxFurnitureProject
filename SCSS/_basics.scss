@@ -123,6 +123,7 @@ html {
 }
 
 .single-slide-content {
+    display: inline-block;
     border: 2px solid red;
     position: absolute;
     top: 40vh;
@@ -154,5 +155,5 @@ html {
 
 .slide-bigger-text,
 .slide-smaller-text {
-    color: #fff !important;
+    color: #fff;
 }
