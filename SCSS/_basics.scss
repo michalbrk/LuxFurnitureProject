@@ -126,10 +126,33 @@ html {
     border: 2px solid red;
     position: absolute;
     top: 40vh;
+    left: 10vw;
+    background-color: transparent;
     animation-name: appearingText;
     animation-duration: 3s;
     animation-delay: 1s;
     animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
+@keyframes appearingText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+        top: 30vh;
+    }
+}
 
+.slide-bigger-content,
+.slide-smaller-content {
+    width: 70vw;
+    background-color: transparent;
+    text-align: center;
+}
+
+.slide-bigger-text,
+.slide-smaller-text {
+    color: #fff !important;
+}
