@@ -91,6 +91,12 @@ html {
     display: none;
 }
 
+.mobile-menu-item:nth-child(3) {
+    a:first-child {
+        display: none;
+    }
+}
+
 .sliders-container,
 .mobile-sliders-container {
     width: 100%;
