@@ -91,10 +91,14 @@ html {
     display: none;
 }
 
-.mobile-menu-item:nth-child(3) {
-    a:first-child {
-        display: none;
-    }
+#hiddenGallery {
+    display: none;
+}
+
+.sub-menu-list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
 }
 
 .sliders-container,
@@ -127,13 +131,13 @@ html {
 
 .slides-animating-item:last-child {
     display: none;
-    background-image: url(../graphics/HCH8K5A_ex.jpg);
+    background-image: url(../graphics/Slider2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .slides-animating-item {
-    background-image: url(../graphics/HC-5XJU_mx.jpg);
+    background-image: url(../graphics/Slider1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     border: 1px dotted orange;
