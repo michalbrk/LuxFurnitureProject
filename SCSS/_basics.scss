@@ -12,34 +12,8 @@ html {
     width: 100%;
 }
 
-//STYLE DLA WERSJI MOBILE
-
-//Logo-header
 .sticky-leftside-header {
     width: 100%;
-}
-
-.logo-wrapper {
-    width: 100%;
-    height: 20vh;
-    border: 1px dotted red;
-}
-
-.logo-positioner {
-    height: 100%;
-    border: 1px solid yellow;
-    position: relative;
-}
-
-.logo-positioner:first-child {
-    display: none;
-}
-
-.logo-mobile-pic {
-    width: 100%;
-    height: 100%;
-    border: 1px dotted green;
-    position: absolute;
 }
 
 .main-menu-container {
@@ -51,43 +25,7 @@ html {
     display: none;
 }
 
-.main-mobile-menu {
-//    display: none;
-}
-
 .main-menu-footer {
-    display: none;
-}
-
-.mobile-menu-wrapper {
-    width: 100%;
-    height: 10vh;
-    border: 1px dotted yellow;
-}
-
-.mobile-icon-wrapper {
-    width: 100%;
-    height: 100%;
-//    position: relative;
-}
-
-.mobile-menu-icon {
-    width: 15%;
-    height: 100%;
-    background-image: url(../graphics/Hamburger%20menu.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    float: right;
-}
-
-.mobile-menu-list {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-.mobile-menu-item:nth-child(1),
-.mobile-menu-item:nth-child(2) {
     display: none;
 }
 
@@ -95,119 +33,6 @@ html {
     display: none;
 }
 
-.sub-menu-list {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-}
-
-.sliders-container,
-.mobile-sliders-container {
-    width: 100%;
-    height: 70vh;
-}
-
-.sliders-container {
-    display: none;
-}
-
-.slides-animating-wrapper,
-.slides-animating-list,
-.slides-switcher-list,
-.slides-animating-item {
-    width: 100%;
-    height: 100%;
-//    border: 1px dotted orange;
-}
-
-.slides-animating-list {
-    list-style-type: none;
-}
-
-.slides-animating-list {
-    margin: 0;
-    padding: 0;
-}
-
-.slides-animating-item:last-child {
-    display: none;
-    background-image: url(../graphics/Slider2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.slides-animating-item {
-    background-image: url(../graphics/Slider1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: 1px dotted orange;
-}
-
-.single-slide-container {
-    position: relative;
-}
-
-.single-slide-content {
-    display: inline-block;
-    border: 2px solid red;
-    position: absolute;
-    top: 40vh;
-    left: 10vw;
-    background-color: transparent;
-    animation-name: appearingText;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-}
-
-@keyframes appearingText {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0.5;
-        top: 30vh;
-    }
-}
-
-.slide-bigger-content,
-.slide-smaller-content {
-    width: 70vw;
-    background-color: transparent;
-    text-align: center;
-}
-
-.slide-bigger-text,
-.slide-smaller-text {
-    color: #fff;
-}
-
 .grid-gallery-wrapper {
     display: none;
 }
-
-.description-information-container {
-    text-align: center;
-}
-
-.separator-clearer {
-    height: 5vh;
-}
-
-.description-information-separator {
-    border-bottom: 1px solid #734F26;
-    width: 60%;
-    margin: 0 0 5vh 20vw;
-}
-
-.main-separator {
-    border-bottom: 1px solid #603820;
-    width: 80%;
-    margin: 10vh 0 10vh 10vw;
-}
-
-.contact-social-container {
-    text-align: center;
-}
-

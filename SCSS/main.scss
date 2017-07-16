@@ -1,16 +1,19 @@
+@import '_basics.scss';
+
+
 //@import 'desktop';
 
-@import 'layout/_header.scss';
-@import 'layout/_nav.scss';
-@import 'layout/_footer.scss';
+//Importing the Mobile
+@import 'mobile/_mainMobile.scss';
+@import 'mobile/_logoAndMenu.scss';
+@import 'mobile/_mobileGallery.scss';
+@import 'mobile/_mobileInformation.scss';
+@import 'mobile/_mobileSlider.scss';
+@import 'mobile/_mobileSocialMedia.scss';
 
-//@import 'mobile';
-
-@import 'pages/_firstPage.scss';
-
+//Importing the Utilities
 @import 'utilities/_mixins.scss';
 @import 'utilities/_variables.scss';
 
 //@import 'vendors'
 
-@import '_basics.scss';
