@@ -17,29 +17,24 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+
+.slides-animating-item {
     position: relative;
     overflow: hidden;
     float: left;
 }
 
-.slides-animating-item-first {
-    background-image: url(../graphics/Slider1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: none;
+.slides-animating-item img {
+    position: absolute;
+    opacity: 0;
+    transition: 2s;
 }
 
-.slides-animating-item-second {
-    background-image: url(../graphics/Slider2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: none;
+.slides-animating-item img.active {
+    opacity: 1;
 }
 
-.slides-animating-item,
-.active {
-    display: block;
-}
 
 .single-slide-container {
     position: relative;
