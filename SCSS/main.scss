@@ -1,19 +1,25 @@
 @import '_basics.scss';
 
-
-//@import 'desktop';
-
 //Importing the Mobile
-@import 'mobile/_mainMobile.scss';
-@import 'mobile/_logoAndMenu.scss';
+@import 'mobile/_commonMobile.scss';
+@import 'mobile/_mobileFooter.scss';
 @import 'mobile/_mobileGallery.scss';
-@import 'mobile/_mobileInformation.scss';
+@import 'mobile/_mobileInfo.scss';
 @import 'mobile/_mobileSlider.scss';
-@import 'mobile/_mobileSocialMedia.scss';
+@import 'mobile/_mobileSocial.scss';
+@import 'mobile/_mobileLogo.scss';
+@import 'mobile/_mobileMenu.scss';
+
+//Importing the Desktop;
+@import 'desktop/_commonDesktop.scss';
+@import 'desktop/_desktopFooter.scss';
+@import 'desktop/_desktopGallery.scss';
+@import 'desktop/_desktopInfo.scss';
+@import 'desktop/_desktopLogo.scss';
+@import 'desktop/_desktopMenu.scss';
+@import 'desktop/_desktopSlider';
+@import 'desktop/_desktopSocial.scss';
 
 //Importing the Utilities
 @import 'utilities/_mixins.scss';
 @import 'utilities/_variables.scss';
-
-//@import 'vendors'
-

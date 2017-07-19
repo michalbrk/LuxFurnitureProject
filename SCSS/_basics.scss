@@ -1,42 +1,12 @@
 * {
     box-sizing: border-box;
-    background-color: #1F1B0A;
+    background-color: #503D1B;
 }
 
 html {
     font-family: Arial, Helvetica, "Times New Roman", sans-serif;
-    color: #FCF7F8;
 }
 
 .container {
     width: 100%;
-}
-
-.sticky-leftside-header {
-    width: 100%;
-}
-
-.main-menu-container {
-    width: 100%;
-    border: 1px dotted green;
-}
-
-.main-desktop-menu {
-    display: none;
-}
-
-.main-menu-footer {
-    display: none;
-}
-
-#hiddenGallery {
-    display: none;
-}
-
-.grid-gallery-wrapper {
-    display: none;
-}
-
-.sliders-container {
-    display: none;
 }

@@ -17,563 +17,121 @@
 </head>
 <body>
     <div class="container">
-        <div class="sticky-leftside-header">
-            <div class="logo-wrapper">
-                <div class="logo-positioner">
-                    <a class="logo-link">
-                        <img class="logo-standard-pic" src="graphics/Logo.png" alt="Standard Logo">
-                    </a>
-                </div>
-                <div class="logo-positioner">
-                    <a class="logo-link">
-                        <img class="logo-mobile-pic" src="graphics/Logo.png" alt="Mobile Logo">      
-                    </a>
-                </div>
+        
+        <! CONTAINER FOR THE LOGO AND MENU (BOTH MOBILE AND DESKTOP) DISPLAYED ON THE LEFT SIDE ON THE DESKTOP VERSION>
+        <div class="logo-menu-wrapper">
+            <div class="logo-container">
+                <a href="#">
+                    <div class="logo-positioner">
+                        <img src="graphics/Logo.png">
+                    </div>
+                </a>
             </div>
             
-            <div class="main-menu-container">
-                <nav class="main-desktop-menu">
+            <! MENU WITH THE GRID GALLERY, HIDDEN IN THE MOBILE VERSION>
+            <div class="menu-container">
+                <div class="mobile-hamburger-menu">
+                    <div class="hamburger-menu-positioner">
+                        <img src="graphics/Hamburger%20menu.png">
+                    </div>
+                </div>
+                <nav class="main-menu-wrapper">
                     <ul class="main-menu-list">
                         <li class="main-menu-item">
-                            <a href="#">
-                                <span class="main-menu-text">HOME</span>          
-                            </a>
+                            <div class="main-menu-home"></div>
                         </li>
                         <li class="main-menu-item">
-                            <a href="#">
-                                <span class="main-menu-text">About Us</span>
-                            </a>
-                            <ul class="sub-menu-list">
-                                <li class="sub-menu-item">
-                                    <a href="#">
-                                        <span class="sub-menu-text">Regulations</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="main-menu-item">
-                            <a href="#">
-                                <span class="main-menu-text">Gallery</span>
-                            </a>
-                            <div class="menu-gallery-wrapper">
-                                <div class="menu-gallery-row">
-                                    <ul class="menu-gallery-list">
-                                        <li class="menu-gallery-item">
-                                            <div class="menu-gallery-title">
-                                                <a href="#">Mebel Ia</a>
-                                            </div>
-                                        </li>
-                                        <li class="menu-gallery-item">
-                                            <div class="menu-gallery-title">
-                                                <a href="#">Mebel Ib</a>
-                                            </div>
-                                        </li>
-                                        <li class="menu-gallery-item">
-                                            <div class="menu-gallery-title">
-                                                <a href="#">Mebel Ic</a>
-                                            </div>
-                                        </li>
-                                    </ul>
+                            <div class="main-menu-gallery">
+                                <div class="main-gallery-grid">
+                                    <div class="row">
+                                        <div class="grid-gallery-item"></div>
+                                        <div class="grid-gallery-item"></div>
+                                        <div class="grid-gallery-item"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="grid-gallery-item"></div>
+                                        <div class="grid-gallery-item"></div>
+                                        <div class="grid-gallery-item"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="grid-gallery-item"></div>
+                                        <div class="grid-gallery-item"></div>
+                                        <div class="grid-gallery-item"></div>
+                                    </div>
                                 </div>
-                                <div class="menu-gallery-row">
-                                    <ul class="menu-gallery-list">
-                                        <li class="menu-gallery-item">
-                                            <div class="menu-gallery-title">
-                                                <a href="#">Mebel IIa</a>
-                                            </div>
-                                        </li>
-                                        <li class="menu-gallery-item">
-                                            <div class="menu-gallery-title">
-                                                <a href="#">Mebel IIb</a>
-                                            </div>
-                                        </li>
-                                        <li class="menu-gallery-item">
-                                            <div class="menu-gallery-title">
-                                                <a href="#">Mebel IIc</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="menu-gallery-row">
-                                    <ul class="menu-gallery-list">
-                                        <li class="menu-gallery-item">
-                                            <div class="menu-gallery-title">
-                                                <a href="#">Mebel IIIa</a>
-                                            </div>
-                                        </li>
-                                        <li class="menu-gallery-item">
-                                            <div class="menu-gallery-title">
-                                                <a href="#">Mebel IIIb</a>
-                                            </div>
-                                        </li>
-                                        <li class="menu-gallery-item">
-                                            <div class="menu-gallery-title">
-                                                <a href="#">Mebel IIIc</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            
                             </div>
-                        
                         </li>
                         <li class="main-menu-item">
-                            <a href="#">
-                                <span class="main-menu-text">Contact</span>
-                            </a>
+                            <div class="main-menu-contact"></div>
                         </li>
                     </ul>
                 </nav>
-                
-                <div class="mobile-menu-wrapper">
+            </div>
+        </div>
+        
+        <! CONTAINER FOR THE SLIDER, REGULAR GALLERY AND INFORMATION/SOCIAL; DISPLAYED ON THE RIGHT SIDE OF THE DESKTOP VERSION>
+        <div class="slider-gallery-info-wrapper">
+            
+            
+            <! THE CONTAINER FOR SLIDER DISPLAYED BOTH ON THE MOBILE AND DESKTOP VERSION>
+            <div class="slider-container">
+                <div class="slider-arrow-wrapper">
                     <a href="#">
-                        <div class="mobile-icon-wrapper">
-                            <div class="mobile-menu-icon"></div>
+                        <div class="slider-arrow-left">
+                        
                         </div>
                     </a>
                 </div>
+                <div class="slider-item-wrapper">
                 
-                <nav class="main-mobile-menu">
-                    <ul class="mobile-menu-list">
-                        <li class="mobile-menu-item">
-                            <a href="#">
-                                <span class="mobile-menu-text">HOME</span>
-                            </a>
-                        </li>
-                        <li class="mobile-menu-item">
-                            <a href="#">
-                                <span class="mobile-menu-text">About Us</span>
-                            </a>
-                            <ul class="sub-menu-list">
-                                <li class="sub-menu-item">
-                                    <a href="#">
-                                        <span class="sub-menu-text">Regulations</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="mobile-sliders-conta]iner">
-                            <div class="slides-animating-wrapper">
-                                <ul class="slides-animating-list">
-                                    <li class="slides-animating-item">
-                                        <img src="graphics/Slider1.jpg" class="active">
-                                        <div class="single-slide-container">
-                                            <div class="single-slide-content">
-                                                <div class="slide-bigger-content">
-                                                    <h2 class="slide-bigger-text">Gustowna sofa</h2>
-                                                </div>
-                                                <div class="slide-smaller-content">
-                                                    <h2 class="slide-smaller-text">Doskonale wpasowana w nowoczesny design</h2>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="slides-animating-item">
-                                        <img src="graphics/Slider2.jpg">
-                                        <div class="single-slide-container">
-                                            <div class="single-slide-content">
-                                                <div class="slide-bigger-content">
-                                                    <h2 class="slide-bigger-text">Elegancki hoker</h2>
-                                                </div>
-                                                <div class="slide-smaller-content">
-                                                    <h2 class="slide-smaller-text">Zapewnia komfort i niepowtarzalny styl</h2>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <ul class="slides-switcher-list">
-                                    <li class="slides-switcher-previous">
-                                        <a href="#" class="slides-switcher-arrow">
-                                            <div class="prev-silde-arrow"></div>
-                                        </a>
-                                    </li>
-                                    <li class="slides-switcher-next">
-                                        <a href="#" class="slides-switcher-arrow">
-                                            <div class="next-slide-arrow"></div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="mobile-menu-item">
-                            <a href="#" id="hiddenGallery">
-                                <span class="mobile-menu-text">Gallery</span>
-                            </a>
-                            <ul class="sub-menu-list">
-                                <li class="sub-menu-item">
-                                    <img class="sub-menu-pic" src="graphics/505944f8ceb32c427396224dfe516624--romantic-bedrooms-beautiful-bedrooms.jpg">
-                                    <div class="sub-menu-mobile-text">
-                                        <a href="#">Mebel Ia</a>
-                                    </div>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <img class="sub-menu-pic" src="graphics/7351df1d9045ce104d5dc843d5a90754--dream-furniture-luxury-furniture.jpg">
-                                    <div class="sub-menu-mobile-text">
-                                        <a href="#">Mebel Ib</a>
-                                    </div>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <img class="sub-menu-pic" src="graphics/797582a923a9f049bb8c2fab0dc2f406--mirrored-furniture-mirrored-dresser.jpg">
-                                    <div class="sub-menu-mobile-text">
-                                        <a href="#">Mebel Ic</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="sub-menu-list">
-                                <li class="sub-menu-item">
-                                    <img class="sub-menu-pic" src="graphics/c3c556c49112babb9e0d880640f969b5.jpg">
-                                    <div class="sub-menu-mobile-text">
-                                        <a href="#">Mebel IIa</a>
-                                    </div>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <img class="sub-menu-pic" src="graphics/e4fb98a2b3831e85416f508ea48a921e.jpg">
-                                    <div class="sub-menu-mobile-text">
-                                        <a href="#">Mebel IIb</a>
-                                    </div>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <img class="sub-menu-pic" src="graphics/fa61be660d500aec_1194-w400-h500-b0-p0--home-design.jpg">
-                                    <div class="sub-menu-mobile-text">
-                                        <a href="#">Mebel IIc</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="sub-menu-list">
-                                <li class="sub-menu-item">
-                                    <img class="sub-menu-pic" src="graphics/HCH8SC4_mk.jpg">
-                                    <div class="sub-menu-mobile-text">
-                                        <a href="#">Mebel IIIa</a>
-                                    </div>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <img class="sub-menu-pic" src="graphics/9b3c80caf4aa9c2e6533e2461f50c494--bedroom-doors-bedroom-furniture.jpg">
-                                    <div class="sub-menu-mobile-text">
-                                        <a href="#">Mebel IIIb</a>
-                                    </div>
-                                </li>
-                                <li class="sub-menu-item">
-                                    <img class="sub-menu-pic" src="graphics/a7f0fd257e21cd3ced2888d6282a709f--foyer-tables-dining-tables.jpg">
-                                    <div class="sub-menu-mobile-text">
-                                        <a href="#">Mebel IIIc</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="main-menu-footer">
-                <div class="social-media-wrapper">
-                    <div class="social-media-item">
-                        <a href="#" class="social-media-icon">
-                            <span class="social-media-text">Facebook</span>
-                        </a>
-                    </div>
-                    <div class="social-media-item">
-                        <a href="#" class="social-media-icon">
-                            <span class="social-media-text">Email</span>
-                        </a>
-                    </div>
-                    <div class="social-media-item">
-                        <a href="#" class="social-media-icon">
-                            <span class="social-media-text">Instagram</span>
-                        </a>
-                    </div>
+                </div>
+                <div class="slider-item-wrapper">
+                
+                </div>
+                <div class="slider-arrow-wrapper">
+                    <a href="#">
+                        <div class="slider-arrow-right">
+                        
+                        </div>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="sliders-container">
-            <div class="slides-animating-wrapper">
-                <ul class="slides-animating-list">
-                    <li class="slides-animating-item">
-                        <div class="single-slide-container">
-                            <div class="single-slide-content">
-                                <div class="slide-bigger-content">
-                                    <h2 class="slide-bigger-text">Gustowna sofa</h2>
-                                </div>
-                                <div class="slide-smaller-content">
-                                    <h2 class="slide-smaller-text">Doskonale wpasowana w nowoczesny design</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="slides-animating-item">
-                        <div class="single-slide-container">
-                            <div class="single-slide-content">
-                                <div class="slide-bigger-content">
-                                    <h2 class="slide-bigger-text">Elegancki hoker</h2>
-                                </div>
-                                <div class="slide-smaller-content">
-                                    <h2 class="slide-smaller-text">Zapewnia komfort i niepowtarzalny styl</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <ul class="slides-switcher-list">
-                    <li class="slides-switcher-previous">
-                        <a href="#" class="slides-switcher-arrow">
-                            <div class="prev-silde-arrow"></div>
-                        </a>
-                    </li>
-                    <li class="slides-switcher-next">
-                        <a href="#" class="slides-switcher-arrow">
-                            <div class="next-slide-arrow"></div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="main-content">
-            <div class="grid-gallery-wrapper">
-                <div class="grid-gallery-row">
-                    <div class="grid-gallery-item">
-                        <div class="gallery-item-picture">
-                            <a href="#">
-                                <span class="gallery-item-hover">
-                                    <img>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="gallery-item-text">
-                            <h3>
-                                <a href="#">Mebel Ia</a>
-                            </h3>
-                            <h4>
-                                <a href="#">Zobacz opis</a>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="grid-gallery-item">
-                        <div class="gallery-item-picture">
-                            <a href="#">
-                                <span class="gallery-item-hover">
-                                    <img>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="gallery-item-text">
-                            <h3>
-                                <a href="#">Mebel Ib</a>
-                            </h3>
-                            <h4>
-                                <a href="#">Zobacz opis</a>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="grid-gallery-item">
-                        <div class="gallery-item-picture">
-                            <a href="#">
-                                <span class="gallery-item-hover">
-                                    <img>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="gallery-item-text">
-                            <h3>
-                                <a href="#">Mebel Ic</a>
-                            </h3>
-                            <h4>
-                                <a href="#">Zobacz opis</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-gallery-row">
-                    <div class="grid-gallery-item">
-                        <div class="gallery-item-picture">
-                            <a href="#">
-                                <span class="gallery-item-hover">
-                                    <img>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="gallery-item-text">
-                            <h3>
-                                <a href="#">Mebel IIa</a>
-                            </h3>
-                            <h4>
-                                <a href="#">Zobacz opis</a>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="grid-gallery-item">
-                        <div class="gallery-item-picture">
-                            <a href="#">
-                                <span class="gallery-item-hover">
-                                    <img>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="gallery-item-text">
-                            <h3>
-                                <a href="#">Mebel IIb</a>
-                            </h3>
-                            <h4>
-                                <a href="#">Zobacz opis</a>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="grid-gallery-item">
-                        <div class="gallery-item-picture">
-                            <a href="#">
-                                <span class="gallery-item-hover">
-                                    <img>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="gallery-item-text">
-                            <h3>
-                                <a href="#">Mebel IIc</a>
-                            </h3>
-                            <h4>
-                                <a href="#">Zobacz opis</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-gallery-row">
-                    <div class="grid-gallery-item">
-                        <div class="gallery-item-picture">
-                            <a href="#">
-                                <span class="gallery-item-hover">
-                                    <img>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="gallery-item-text">
-                            <h3>
-                                <a href="#">Mebel IIIa</a>
-                            </h3>
-                            <h4>
-                                <a href="#">Zobacz opis</a>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="grid-gallery-item">
-                        <div class="gallery-item-picture">
-                            <a href="#">
-                                <span class="gallery-item-hover">
-                                    <img>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="gallery-item-text">
-                            <h3>
-                                <a href="#">Mebel IIIc</a>
-                            </h3>
-                            <h4>
-                                <a href="#">Zobacz opis</a>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="grid-gallery-item">
-                        <div class="gallery-item-picture">
-                            <a href="#">
-                                <span class="gallery-item-hover">
-                                    <img>
-                                </span>
-                            </a>
-                        </div>
-                        <div class="gallery-item-text">
-                            <h3>
-                                <a href="#">Mebel IIIc</a>
-                            </h3>
-                            <h4>
-                                <a href="#">Zobacz opis</a>
-                            </h4>
-                        </div>
-                    </div>
-                </div>
             
-            </div>
-            <div class="information-contact-wrapper">
-                <div class="description-information-container">
-                    <h2>Reservations</h2>
-                    <div class="separator-clearer"></div>
-                    <div class="description-information-separator"></div>
-                    <p>Hva er Lorem Ipsum?</p>
-                    <p>Lorem Ipsum er rett og slett dummytekst fra og for trykkeindustrien.</p>
-                    <h3>Lorem Ipsum har vært bransjens standard for dummytekst helt siden 1500-tallet.</h3>
-                    <div class="separator-clearer"></div>
-                    <div class="description-information-separator"></div>
-                    <div class="description-information-text">Hvorfor bruker vi det?
-                    Det er et velkjent faktum at lesere distraheres av lesbart innhold på en side når man ser på dens layout. Poenget med å bruke Lorem Ipsum er at det har en mer eller mindre normal fordeling av bokstaver i ord, i motsetning til 'Innhold her, innhold her', og gir inntrykk av å være lesbar tekst.</div>
-                </div>
-                <div class="contact-social-container">
-                    <div class="main-separator">
-                        <div class="separator-clearer"></div>
-                        <div class="contact-social-separator"></div>
+            <! THE CONTAINER FOR THE REGULAR GALLERY DISPLAYED BOTH ON THE MOBILE AND DESKTOP VERSION>
+            <div class="gallery-container">
+                <div class="main-gallery-grid">
+                    <div class="row">
+                        <div class="grid-gallery-item"></div>
+                        <div class="grid-gallery-item"></div>
+                        <div class="grid-gallery-item"></div>
                     </div>
-                    <div class="contact-email-wrapper">
-                        <div class="icon-theme-wrapper">
-                            <div class="icon">
-                                <i></i>
-                            </div>
-                            <h2 class="icon-email-text">Email</h2>
-                        </div>
-                        <div class="email-content">
-                            <a href="#">contact@lux.pl</a>
-                        </div>
+                    <div class="row">
+                        <div class="grid-gallery-item"></div>
+                        <div class="grid-gallery-item"></div>
+                        <div class="grid-gallery-item"></div>
                     </div>
-                    <div class="contact-call-wrapper">
-                        <div class="icon-theme-wrapper">
-                            <div class="icon">
-                                <i></i>
-                            </div>
-                            <h2 class="icon-call-text">Call</h2>
-                        </div>
-                        <div class="call-content">
-                            <a href="#">+48 71 111 22 33</a>
-                        </div>
-                    </div>
-                    <div class="social-fb-wrapper">
-                        <div class="icon-theme-wrapper">
-                            <div class="icon">
-                                <i></i>
-                            </div>
-                            <h2 class="icon-fb-text">Facebook</h2>
-                        </div>
-                        <div class="fb-content">
-                            <a href="#">facebook/lux.furniture.com</a>
-                        </div>
-                    </div>
-                    <div class="separator-wrapper">
-                        <div class="separator-clearer"></div>
+                    <div class="row">
+                        <div class="grid-gallery-item"></div>
+                        <div class="grid-gallery-item"></div>
+                        <div class="grid-gallery-item"></div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer">
-            <div class="main-menu-footer">
-                <div class="main-copyrights">
-                    <div class="copyrights-text">© Copyright 2017 | All Rights Reserved | LuxFurnitureProject</div>
+            
+            <! THE CONTAINER FOR THE INFORMATION AND SOCIAL MEDIA ALSO FOR THE FOOTER OF THE WEB PAGE>
+            <div class="info-and-social-container">
+                <div class="information-wrapper">
+                    
                 </div>
                 <div class="social-media-wrapper">
-                    <div class="social-media-item">
-                        <a href="#" class="social-media-icon">
-                            <span class="social-media-text">Facebook</span>
-                        </a>
-                    </div>
-                    <div class="social-media-item">
-                        <a href="#" class="social-media-icon">
-                            <span class="social-media-text">Email</span>
-                        </a>
-                    </div>
-                    <div class="social-media-item">
-                        <a href="#" class="social-media-icon">
-                            <span class="social-media-text">Instagram</span>
-                        </a>
-                    </div>
+                
                 </div>
+                <footer>
+                
+                </footer>
             </div>
         </div>
-    
     </div>
-    
-
 </body>
 </html>
 
