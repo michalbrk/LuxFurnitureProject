@@ -33,6 +33,8 @@
     list-style-type: none;
 }
 
+
+//Main menu styles
 .main-menu-item {
     width: 100%;
     height: 15vh;
@@ -41,14 +43,33 @@
     color: #DBBC94;
 }
 
-.main-menu-home {
+.main-menu-item:last-child {
+    border-bottom: 1px solid #6B5824;
+}
+
+.main-menu-home,
+.main-menu-gallery,
+.main-menu-contact {
     width: 100%;
     height: 90%;
+//Centering span vertically & horizontally
     text-align: center;
     display: table;
 }
 
 .main-menu-home span {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main-menu-gallery span {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main-menu-contact span {
     width: 100%;
     display: table-cell;
     vertical-align: middle;
