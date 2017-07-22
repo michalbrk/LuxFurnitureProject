@@ -11,10 +11,11 @@
     height: 100%;
     position: relative;
     overflow: hidden;
-    &:last-child {
 //    border: 1px solid red;
+}
+
+div.slider-item-wrapper:last-child {
     display: none;
-    }
 }
 
 
@@ -25,6 +26,7 @@
 
 .slider-item-wrapper img.active {
     display: inline-block;
+    border: 1px solid red;
 }
 
 .slider-arrow-wrapper:first-child {
