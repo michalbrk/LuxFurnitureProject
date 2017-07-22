@@ -24,6 +24,7 @@
 .main-menu-wrapper {
     width: 100%;
     margin-top: 5vh;
+    display: none;
 }
 
 .main-menu-list {
@@ -41,11 +42,25 @@
     border-top: 1px solid #6B5824;
     font-size: 1.5rem;
     color: #DBBC94;
+//    &::before {
+//        content: "";
+//        display: block;
+//        border: 3px solid red;
+//        clear: both;
+//    }
+//    &::after {
+//        content: "";
+//        display: block;
+//        border: 3px solid red;
+//        clear: both;
+//    }
 }
 
 .main-menu-item:last-child {
     border-bottom: 1px solid #6B5824;
 }
+
+
 
 .main-menu-home,
 .main-menu-gallery,
@@ -78,7 +93,7 @@
 //Grid gallery styles
 .main-gallery-grid {
     width: 100%;
-    display: none;;
+    display: none;
 }
 
 .row {

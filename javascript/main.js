@@ -1,12 +1,14 @@
 $(function() {
     console.log("Działa!");
     
-    function slideToggle() {
-        
-        var currentImg = $(".slides-animating-item").find("img.active");
-        var nextImg = $(".slides-animating-item").find("img:not(.active)");
-        
-    }
-slideToggle();
+    var prevBtn = $(".slider-arrow-left");
+    var nextBtn = $(".slider-arrow-right");
+    console.log(prevBtn,nextBtn);
+    
+    prevBtn.on("click", function() {
+        var currentImg = $(".active");
+        var nextImg = $(".slider-arrow-wrapper:last-child").find("img:not(.active)");
+        console.log(currentImg,nextImg);
+    });
 
 });
