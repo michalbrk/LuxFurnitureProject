@@ -5,10 +5,17 @@ $(function() {
     var nextBtn = $(".slider-arrow-right");
     console.log(prevBtn,nextBtn);
     
-    prevBtn.on("click", function() {
+    nextBtn.on("click", function(e) {
         var currentImg = $(".active");
         var nextImg = $(".slider-arrow-wrapper:last-child").find("img:not(.active)");
-        console.log(currentImg,nextImg);
+        
+        e.stopImmediatePropagation();
+        
+        if(nextImg.length) {
+            currentImg.removeClass("active").css("z-index", -10);
+            nextImg.addClass("active").css("z-index", 10);
+        }
     });
 
 });
+    
