@@ -32,6 +32,7 @@
     margin: 0px;
     padding: 0px;
     list-style-type: none;
+    position: relative;
 }
 
 
@@ -42,18 +43,7 @@
     border-top: 1px solid #6B5824;
     font-size: 1.5rem;
     color: #DBBC94;
-//    &::before {
-//        content: "";
-//        display: block;
-//        border: 3px solid red;
-//        clear: both;
-//    }
-//    &::after {
-//        content: "";
-//        display: block;
-//        border: 3px solid red;
-//        clear: both;
-//    }
+    z-index: 50;
 }
 
 .main-menu-item:last-child {
@@ -70,6 +60,7 @@
 //Centering span vertically & horizontally
     text-align: center;
     display: table;
+    position: relative;
 }
 
 .main-menu-home span {
