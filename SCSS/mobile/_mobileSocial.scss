@@ -1,0 +1,33 @@
+footer,
+.social-media-wrapper {
+    width: 100%;
+}
+
+.social-separator {
+    border-top: 1px solid #826B2B;
+    margin-top: 20vh;
+}
+
+.social-text-wrapper {
+    margin-top: 5vh;
+    text-align: center;
+    color: #C98F5E;
+}
+
+.social-icons-wrapper {
+    width: 100%;
+}
+
+.social-icon-item {
+    width: 20vw;
+    height: 15vh;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    background-size: contain;
+}
+
+.social-icon-item img {
+    max-width: 100%;
+    max-height: 100%;
+}
