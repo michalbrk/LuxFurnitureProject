@@ -9,22 +9,26 @@ footer,
 }
 
 .social-text-wrapper {
-    margin-top: 5vh;
+    margin-top: 10vh;
     text-align: center;
     color: #C98F5E;
 }
 
 .social-icons-wrapper {
     width: 100%;
+    padding-left: 28vw;
 }
 
 .social-icon-item {
-    width: 20vw;
-    height: 15vh;
+    width: 40px;
+    height: 40px;
+    margin-top: 10vh;
+    margin-right: 5vw;
+    margin-bottom: 10vh;
     border-radius: 50%;
     overflow: hidden;
-    display: inline-block;
     background-size: contain;
+    display: inline-block;
 }
 
 .social-icon-item img {
