@@ -2,6 +2,26 @@
 .main-gallery-grid,
 .big-row,
 .big-gallery-item,
-.big-gallery-item img {
+.big-gallery-img,
+.big-gallery-img img {
     width: 100%;
+}
+
+.big-gallery-img {
+    overflow: hidden;
+}
+
+.big-gallery-img img {
+    transition: all 1s ease;
+}
+
+.big-gallery-img:hover img {
+    transform: scale(1.15);
+}
+
+.big-gallery-description {
+    color: #DDCD98;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+    margin-left: 3vw;
 }
