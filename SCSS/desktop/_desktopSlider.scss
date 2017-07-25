@@ -10,9 +10,6 @@
         height: 100vh;
         position: relative;
         overflow: hidden;
-    }
-
-    .slider-container div:nth-child(3) {
         display: none;
     }
 
@@ -28,6 +25,7 @@
 
     .slider-arrow-wrapper:first-child {
         width: 10%;
+        height: 5%;
         position: absolute;
         top: 50%;
         left: 5%;
@@ -36,6 +34,7 @@
 
     .slider-arrow-wrapper:last-child {
         width: 10%;
+        height: 5%;
         position: absolute;
         top: 50%;
         right: 5%;
@@ -43,11 +42,11 @@
     }
 
     .slider-text-wrapper {
+        width: 60%;
         visibility: hidden;
-        border: 2px solid red;
         position: absolute;
         top: 40vh;
-        left: 22vw;
+        left: 20%;
         background-color: transparent;
         animation-name: appearingText;
         animation-duration: 3s;
@@ -63,14 +62,15 @@
         }
         100% {
             visibility: visible;
-            opacity: 0.5;
             top: 30vh;
+            opacity: .7;
         }
     }
 
     .slider-text-heading,
     .slider-text-description {
         color: #fff;
+        font-size: 2rem;
         text-align: center;
     }
 }

@@ -2,21 +2,21 @@
     .logo-menu-wrapper {
         width: 30%;
         height: 100%;
-        display: block;
+        position: fixed;
     }
     
     .slider-gallery-info-wrapper {
         width: 70%;
         height: 100%;
-        display: block;
+        margin-left: 30%;
     }
     
     .to-top-container {
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         position: fixed;
         bottom: 0;
-        right: 15vw;
+        right: 10vw;
         border-radius: 6px;
         background-color: #412E16;
         opacity: .6;
