@@ -9,7 +9,18 @@ html {
 
 .container {
     width: 100%;
-    display: block;
+}
+
+@media (max-width: 500px) {
+    .container {    
+        display: block;
+    }
+}
+
+@media (min-width: 500px) {
+    .container {
+        display: inline-block;
+    }
 }
 
 a {
