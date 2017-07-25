@@ -13,7 +13,6 @@
     .main-menu-wrapper {
     width: 100%;
     margin-top: 5vh;
-    display: none;
     }
 
     .main-menu-list {
@@ -31,15 +30,15 @@
     height: 15vh;
     border-top: 1px solid #6B5824;
     font-size: 1.5rem;
-    color: #DBBC94;
-    z-index: 50;
     }
 
     .main-menu-item:last-child {
     border-bottom: 1px solid #6B5824;
     }
 
-
+    .main-menu-item a {
+        color: #DBBC94;
+    }
 
     .main-menu-home,
     .main-menu-gallery,
