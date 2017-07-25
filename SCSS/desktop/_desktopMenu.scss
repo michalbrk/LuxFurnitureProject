@@ -1,0 +1,90 @@
+@media (min-width: 500px) {
+    
+    .menu-container {
+        width: 100%;
+    }
+
+
+    //Hamburger menu styles
+    .mobile-hamburger-menu {
+        display: none;
+    }
+
+    .main-menu-wrapper {
+    width: 100%;
+    margin-top: 5vh;
+    display: none;
+    }
+
+    .main-menu-list {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    position: relative;
+    }
+
+
+    //Main menu styles
+    .main-menu-item {
+    width: 100%;
+    height: 15vh;
+    border-top: 1px solid #6B5824;
+    font-size: 1.5rem;
+    color: #DBBC94;
+    z-index: 50;
+    }
+
+    .main-menu-item:last-child {
+    border-bottom: 1px solid #6B5824;
+    }
+
+
+
+    .main-menu-home,
+    .main-menu-gallery,
+    .main-menu-contact {
+    width: 100%;
+    height: 90%;
+    //Centering span vertically & horizontally
+    text-align: center;
+    display: table;
+    position: relative;
+    }
+
+    .main-menu-home span {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    }
+
+    .main-menu-gallery span {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    }
+
+    .main-menu-contact span {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    }
+
+    //Grid gallery styles
+    .main-gallery-grid {
+    width: 100%;
+    display: none;
+    }
+
+    .row {
+    width: 100%;
+    }
+
+    .grid-gallery-item {
+    width: 100%;
+    }
+
+    .gallery-item-description {
+    padding: 3vh 0 3vh 3vw;
+    }
+}
