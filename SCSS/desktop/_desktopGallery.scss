@@ -9,12 +9,6 @@
         display: flex;
     }
     
-    .big-row {
-        &.big-gallery-description:nth-child(odd) {
-        background-color: #412816;
-        }
-    }
-    
     .big-gallery-item {
         width: 33.333%;
     }
@@ -40,7 +34,7 @@
         margin-left: 1vw;
     }
     
-//    .big-gallery-description:nth-child(odd) {
-//        background-color: #412816;
-//    }
+    .odd-item-bColor {
+        background-color: #392413 !important;
+    }
 }
