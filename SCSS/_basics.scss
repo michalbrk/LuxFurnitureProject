@@ -11,13 +11,13 @@ html {
     width: 100%;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 700px) {
     .container {    
         display: block;
     }
 }
 
-@media (min-width: 500px) {
+@media screen and (min-width: 700px) {
     .container {
         display: flex;
     }
