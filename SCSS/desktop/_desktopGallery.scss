@@ -1,4 +1,4 @@
-@media (min-width: 700px) {
+@media screen and (min-width: 800px) {
     .gallery-container,
     .big-gallery-grid,
     .big-row {
@@ -7,6 +7,12 @@
     
     .big-row {
         display: flex;
+    }
+    
+    .big-row {
+        &.big-gallery-description:nth-child(odd) {
+        background-color: #412816;
+        }
     }
     
     .big-gallery-item {
