@@ -34,14 +34,25 @@
     }
 
     .slider-arrow-wrapper:last-child {
-        width: 10%;
-        height: 5%;
+        width: 15%;
+        height: 15%;
         position: absolute;
         top: 50%;
         right: 5%;
         z-index: 5;
+        border: 1px solid pink;
+        
     }
-
+    
+    .slider-arrow-right {
+        position: relative;
+        width: 0;
+        height: 0;
+        border-left: 100px solid red;
+        border-top: 50px solid transparent;
+        border-bottom: 50px solid transparent;    
+    }
+    
     .slider-text-wrapper {
         width: 60%;
         visibility: hidden;
