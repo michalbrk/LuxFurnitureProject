@@ -7,9 +7,10 @@ $(function() {
     var nextImg = $(".slider-item-wrapper").not("[id='active']");
     var galleryBackgnd = $(".big-gallery-item");
     var galleryCounter = 0;
+    var toTopArrow = $(".to-top-container");
     console.log(prevBtn,nextBtn);
     console.log(currentImg,nextImg);
-    console.log(galleryBackgnd.length);
+    console.log(toTopArrow);
     
     function galleryPainter() {
         galleryBackgnd.each(function(galleryCounter) {
@@ -21,6 +22,27 @@ $(function() {
     }
     
     galleryPainter();
+    
+    
+    function toppingViewport() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 100) {
+                toTopArrow.fadeIn();
+            } else {
+                toTopArrow.fadeOut();
+            }
+        });
+        
+        toTopArrow.on("click", function(e) {
+            e.stopImmediatePropagation();
+            $("body").animate({
+                scrollTop: 0
+            }, 1000);
+            return false;
+        });
+    }
+    
+    toppingViewport();
     
     nextBtn.on("click", function(e) {
         e.stopImmediatePropagation();

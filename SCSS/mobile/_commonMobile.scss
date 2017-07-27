@@ -7,19 +7,26 @@
     }
 
     .to-top-container {
+        display: none;
         width: 40px;
         height: 40px;
         position: fixed;
         bottom: 5vh;
-        right: 5vw;
+        right: 16vw;
         border-radius: 6px;
         background-color: #412E16;
         opacity: .6;
-        a {
-            width: 100%;
-            height: 100%;
-        }
     }
     
-    
+    .to-top-arrow {
+        width: 50%;
+        height: 50%;
+        position: relative;
+        top: 2vh;
+        left: 2vw;
+        background-color: transparent;
+        transform: rotate(45deg);
+        border-left: 5px solid #fff;
+        border-top: 5px solid #fff;
+    }
 }
