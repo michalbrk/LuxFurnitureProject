@@ -8,9 +8,29 @@ $(function() {
     var galleryBackgnd = $(".big-gallery-item");
     var galleryCounter = 0;
     var toTopArrow = $(".to-top-container");
+    var menuGalBtn = $(".main-menu-gallery");
+    var menuGalGrd = $(".main-gallery-grid");
+    var sldGalInfWrp = $(".slider-gallery-info-wrapper");
     console.log(prevBtn,nextBtn);
     console.log(currentImg,nextImg);
-    console.log(toTopArrow);
+    console.log(menuGalBtn,menuGalGrd,sldGalInfWrp);
+    
+    function menuGalMvmnt() {
+        menuGalBtn.on("click", function(e) {
+            e.stopImmediatePropagation();
+            if(menuGalGrd.attr("id", "active")) {
+                menuGalGrd.fadeIn();
+                sldGalInfWrp.atrr("id", "blurring");
+            } else {
+                menuGalGrd.fadeOut();
+                sldGalInfWrp.removeAttr("id");
+            }
+        });
+    }
+    
+    menuGalMvmnt();
+    
+    
     
     function galleryPainter() {
         galleryBackgnd.each(function(galleryCounter) {
