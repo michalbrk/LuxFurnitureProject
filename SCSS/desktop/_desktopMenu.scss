@@ -110,4 +110,57 @@
         padding-left: 1vw;
         border: 1px solid red;
      }
+    
+    
+        //Contact form styles
+    .main-menu-form {
+        display: none;
+        width: 30vw;
+        height: 70vh;
+        position: relative;
+        top: -50vh;
+        left: 35vw;
+    }
+    
+    .menu-contact-item {
+        width: 70%;
+        display: block;
+        padding: 5px 5px 5px 10px;
+    }
+    
+    .menu-contact-item:nth-child(3) {
+        width: 100%;
+    }
+    
+    #menu-contact-name,
+    #menu-contact-mail {
+        width: 100%;
+        height: 7vh;
+        margin-bottom: 5vh;
+        border: 1px solid #503D1B;
+        border-radius: 4px;
+        background-color: transparent;
+    }
+    
+    #menu-contact-message {
+        width: 100%;
+        border: 1px solid #503D1B;
+        border-radius: 4px;
+        background-color: transparent;
+    }
+    
+    .menu-contact-button {
+        width: 100%;
+        height: 7vh;
+        padding-left: 18vw;
+    }
+    
+    #menu-input-button {
+        height: 100%;
+        width: 10vw;
+        border-radius: 4px;
+        border: 1px solid #503D1B;
+        background-color: #503D1B;
+        color: #DBBC94;
+    }
 }

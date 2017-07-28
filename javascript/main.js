@@ -78,21 +78,29 @@ $(function() {
     
     toppingViewport();
     
-    nextBtn.on("click", function(e) {
-        e.stopImmediatePropagation();
-        
-        if(currentImg.attr("id", "active")) {
-            currentImg.removeAttr("id").css("display", "none");
-            nextImg.attr("id", "active").css("display", "block");
-        }
-    });
     
-    prevBtn.on("click", function(e) {
-        e.stopImmediatePropagation();
+    
+    function sliderChange() {
         
-        if(currentImg.attr("id", "active")) {
-            currentImg.removeAttr("id").css("display", "none");
-            nextImg.attr("id", "active").css("display", "block");
-        }
-    });
+    
+        nextBtn.on("click", function(e) {
+            e.stopImmediatePropagation();
+
+            if(currentImg.attr("id", "active")) {
+                currentImg.removeAttr("id").css("display", "none");
+                nextImg.attr("id", "active").css("display", "block");
+            }
+        });
+
+        prevBtn.on("click", function(e) {
+            e.stopImmediatePropagation();
+
+            if(currentImg.attr("id", "active")) {
+                currentImg.removeAttr("id").css("display", "none");
+                nextImg.attr("id", "active").css("display", "block");
+            }
+        });
+    }
+    
+    sliderChange();
 });
