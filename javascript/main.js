@@ -11,9 +11,12 @@ $(function() {
     var menuGalBtn = $(".main-menu-gallery");
     var menuGalGrd = $(".main-gallery-grid");
     var sldGalInfWrp = $(".slider-gallery-info-wrapper");
+    var hmbgMenu = $(".mobile-hamburger-menu");
+    var mainMenuWrp = $(".main-menu-wrapper");
     console.log(prevBtn,nextBtn);
     console.log(currentImg,nextImg);
     console.log(menuGalBtn,menuGalGrd,sldGalInfWrp);
+    console.log(hmbgMenu,mainMenuWrp);
     
     function menuGalMvmnt() {
         menuGalBtn.on("click", function(e) {
@@ -42,6 +45,17 @@ $(function() {
     }
     
     galleryPainter();
+    
+    
+    function mainMenuSliding() {
+        hmbgMenu.on("click", function(e) {
+            e.stopImmediatePropagation();
+            mainMenuWrp.slideToggle("slow");
+        });
+        
+    }
+    
+    mainMenuSliding();
     
     
     function toppingViewport() {

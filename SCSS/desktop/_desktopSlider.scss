@@ -1,4 +1,5 @@
 @media screen and (min-width: 800px) {
+    
     .slider-container {
         width: 100%;
         height: 100vh;
@@ -27,7 +28,7 @@
         width: 10%;
         height: 5%;
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 5%;
         z-index: 5;
     }
@@ -36,7 +37,7 @@
         width: 15%;
         height: 15%;
         position: absolute;
-        top: 50%;
+        top: 45%;
         right: 5%;
         z-index: 5;        
     }
@@ -91,8 +92,11 @@
 
     .slider-text-heading,
     .slider-text-description {
-        color: #fff;
+        background-color: #000;
+        border-radius: 4px;
+        opacity: inherit;
         font-size: 2rem;
+        color: #fff;
         text-align: center;
     }
 }
