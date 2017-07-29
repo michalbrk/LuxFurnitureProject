@@ -4,7 +4,7 @@ $(function() {
     var nextBtn = $(".slider-arrow-right");
     var sliderElms = $(".slider-container").find(".slider-item-wrapper");
     var currentImg = sliderElms.filter(".active");
-    var nextImg = $(".slider-item-wrapper"):not(".active");
+    var nextImg = sliderElms.filter(":not('.active')");
     var galleryBackgnd = $(".big-gallery-item");
     var galleryCounter = 0;
     var toTopArrow = $(".to-top-container");
@@ -67,15 +67,25 @@ $(function() {
         
         nextBtn.on("click", function(e) {
             e.stopImmediatePropagation();
-            if(currentImg.hasClass("active") == true) {
-                currentImg.removeClass("active");
-                
+            
+            if(currentImg.hasClass("active") == true) {                
+                currentImg.removeClass("active").css("display", "none");
+                nextImg.addClass("active").css("display", "block");
+            } else {
+                currentImg.addClass("active").css("display", "block");
+                nextImg.removeClass("active").css("display", "none");
             }
         });
-
         prevBtn.on("click", function(e) {
             e.stopImmediatePropagation();
-            
+             
+            if(currentImg.hasClass("active") == true) {                
+                currentImg.removeClass("active").css("display", "none");
+                nextImg.addClass("active").css("display", "block");
+            } else {
+                currentImg.addClass("active").css("display", "block");
+                nextImg.removeClass("active").css("display", "none");
+            }
         });
     }
     
