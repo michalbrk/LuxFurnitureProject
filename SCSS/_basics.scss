@@ -31,25 +31,40 @@ a {
     text-decoration: none;
 }
 
-#active {
+.active {
     display: block;
 }
 
-#blurring {
-//    opacity: .1;
-    animation-name: blurringContainer;
+.blurDown {
+    opacity: 1;
+    animation-name: blurringDown;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
-@keyframes blurringContainer {
+@keyframes blurringDown {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .1;
+    }
+}
+
+.blurUp {
+    opacity: .1;
+    animation-name: blurringUp;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blurringUp {
     0% {
         opacity: .1;
-        visibility: hidden;
     }
     100% {
         opacity: 1;
-        visibility: visible;
     }
 }
