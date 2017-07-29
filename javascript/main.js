@@ -21,12 +21,20 @@ $(function() {
     function menuGalMvmnt() {
         menuGalBtn.on("click", function(e) {
             e.stopImmediatePropagation();
-            if(menuGalGrd.attr("id", "active")) {
-                menuGalGrd.fadeIn();
-                sldGalInfWrp.atrr("id", "blurring");
-            } else {
-                menuGalGrd.fadeOut();
-                sldGalInfWrp.removeAttr("id");
+            if(menuGalGrd.attr("id") !== "active") {
+                menuGalGrd.fadeIn(2000, function() {
+                    menuGalGrd.attr("id", "active");
+                });
+//                setTimeout(function() {
+                    sldGalInfWrp.attr("id", "blurring");
+//                }, 1000);
+            } else if(sldGalInfWrp.attr("id") == "blurring") {
+                menuGalGrd.fadeOut(2000, function() {
+                    menuGalGrd.removeAttr("id");
+                });
+                setTimeout(function() {
+                    sldGalInfWrp.removeAttr("id");
+                }, 1000);
             }
         });
     }

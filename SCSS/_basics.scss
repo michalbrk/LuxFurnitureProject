@@ -7,6 +7,10 @@ html {
     background-color: #503D1B;
 }
 
+body {
+    margin: 0;
+}
+
 .container {
     width: 100%;
 }
@@ -32,5 +36,20 @@ a {
 }
 
 #blurring {
-    opacity: .3;
+//    opacity: .1;
+    animation-name: blurringContainer;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes blurringContainer {
+    0% {
+        opacity: .1;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
 }
