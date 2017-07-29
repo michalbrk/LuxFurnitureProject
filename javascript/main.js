@@ -13,6 +13,7 @@ $(function() {
     var sldGalInfWrp = $(".slider-gallery-info-wrapper");
     var hmbgMenu = $(".mobile-hamburger-menu");
     var mainMenuWrp = $(".main-menu-wrapper");
+    var infiniteSld = setTimeout(sliderChange, 6000);
     console.log(sliderElms);
     console.log(currentImg);
     console.log(nextImg);
@@ -57,7 +58,7 @@ $(function() {
     
     
     
-    function sliderChange() {
+    function sliderChange(infiniteSld) {
         
         sliderElms.each(function() {
             if($(this).hasClass("active") == false) {
@@ -65,8 +66,20 @@ $(function() {
             }
         });
         
+        if(currentImg.hasClass("active") == true) {                
+                currentImg.removeClass("active").css("display", "none");
+                nextImg.addClass("active").css("display", "block");
+            } else {
+                currentImg.addClass("active").css("display", "block");
+                nextImg.removeClass("active").css("display", "none");
+            }
+        
+        
+        
         nextBtn.on("click", function(e) {
             e.stopImmediatePropagation();
+            
+            clearTimeout(infiniteSld);
             
             if(currentImg.hasClass("active") == true) {                
                 currentImg.removeClass("active").css("display", "none");
@@ -75,9 +88,14 @@ $(function() {
                 currentImg.addClass("active").css("display", "block");
                 nextImg.removeClass("active").css("display", "none");
             }
+            
+            infiniteSld;
         });
+        
         prevBtn.on("click", function(e) {
             e.stopImmediatePropagation();
+            
+            clearTimeout(infiniteSld);
              
             if(currentImg.hasClass("active") == true) {                
                 currentImg.removeClass("active").css("display", "none");
@@ -86,10 +104,12 @@ $(function() {
                 currentImg.addClass("active").css("display", "block");
                 nextImg.removeClass("active").css("display", "none");
             }
+            
+            infiniteSld;
         });
     }
     
-    sliderChange();
+    sliderChange(infiniteSld);
     
     
     
