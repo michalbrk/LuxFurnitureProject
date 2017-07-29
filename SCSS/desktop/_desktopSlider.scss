@@ -12,7 +12,7 @@
         height: 100vh;
         position: relative;
         overflow: hidden;
-        display: none;
+//        display: none;
     }
 
     .slider-item-wrapper img {
@@ -36,17 +36,8 @@
         position: absolute;
         top: 45%;
         right: 5%;
-        z-index: 5;        
+        z-index: 5;
     }
-    
-//    .slider-arrow-wrapper {
-//        visibility: hidden;
-//    }
-//    
-//    .slider-arrow-wrapper:hover {
-//        visibility: visible;
-//        background-color: yellow;
-//    }
     
     .slider-arrow-right {
         position: relative;
