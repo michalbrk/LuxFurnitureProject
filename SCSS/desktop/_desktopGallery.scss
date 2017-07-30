@@ -15,9 +15,11 @@
 
     .big-gallery-img {
         overflow: hidden;
+        position: relative;
     }
 
     .big-gallery-img img {
+        height: 100%;
         max-width: 100%;
         max-height: 100%;
         transition: all 1s ease;
