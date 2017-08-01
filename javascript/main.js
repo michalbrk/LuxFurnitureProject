@@ -11,12 +11,13 @@ $(function() {
     var toTopArrow = $(".to-top-container");
     var menuGalBtn = $(".main-menu-gallery");
     var menuGalGrd = $(".main-gallery-grid");
-//    var mobileGalBtn = $(".mobileDisplay")
+    var mobileGalBtn = $(".mobile-display")
     var sldGalInfWrp = $(".slider-gallery-info-wrapper");
     var hmbgMenu = $(".mobile-hamburger-menu");
     var mainMenuWrp = $(".main-menu-wrapper");
     var infiniteSld = setInterval(sliderChange, 5000);
-    
+    console.log(mobileGalBtn);
+    console.log(menuGalBtn);
     
     
     function menuGalMvmnt() {
@@ -33,6 +34,20 @@ $(function() {
     }
     
     menuGalMvmnt();
+    
+    
+    function mobileGalMvmnt() {
+        mobileGalBtn.on("click", function(e) {
+            e.stopImmediatePropagation();
+            
+            //Jak zniknąć poszczególne elementy menu?
+            //Jak uzyskać efekt pojawiania się/znikania?
+            sldGalInfWrp.css("display", "none");
+        });
+    }
+    
+    mobileGalMvmnt();
+    
     
     
     function galleryPainter() {
