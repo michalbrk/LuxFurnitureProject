@@ -11,42 +11,32 @@ $(function() {
     var toTopArrow = $(".to-top-container");
     var menuGalBtn = $(".main-menu-gallery");
     var menuGalGrd = $(".main-gallery-grid");
-    var mobileGalBtn = $(".mobile-display")
     var sldGalInfWrp = $(".slider-gallery-info-wrapper");
     var hmbgMenu = $(".mobile-hamburger-menu");
     var mainMenuWrp = $(".main-menu-wrapper");
     var infiniteSld = setInterval(sliderChange, 5000);
-    console.log(mobileGalBtn);
-    console.log(menuGalBtn);
     
     
     function menuGalMvmnt() {
         
         menuGalBtn.on("click", function(e) {
             e.stopImmediatePropagation();
-            menuGalGrd.fadeToggle(2000);
-            if(sldGalInfWrp.hasClass("blurDown") == false) {
-                sldGalInfWrp.removeClass("blurUp").addClass("blurDown");
+            
+            if($(window).width() < 800) {
+                menuGalGrd.fadeToggle(1000);
+                sldGalInfWrp.css("display", "none");
             } else {
-                sldGalInfWrp.removeClass("blurDown").addClass("blurUp");
+                menuGalGrd.fadeToggle(2000);
+                if(sldGalInfWrp.hasClass("blurDown") == false) {
+                    sldGalInfWrp.removeClass("blurUp").addClass("blurDown");
+                } else {
+                    sldGalInfWrp.removeClass("blurDown").addClass("blurUp");
+                }
             }
         });        
     }
     
     menuGalMvmnt();
-    
-    
-    function mobileGalMvmnt() {
-        mobileGalBtn.on("click", function(e) {
-            e.stopImmediatePropagation();
-            
-            //Jak zniknąć poszczególne elementy menu?
-            //Jak uzyskać efekt pojawiania się/znikania?
-            sldGalInfWrp.css("display", "none");
-        });
-    }
-    
-    mobileGalMvmnt();
     
     
     
