@@ -18,12 +18,40 @@ $(function() {
     var mobileMenuItms = $(".main-menu-item");
     var menuCntBtn = $(".main-menu-contact");
     var cntForm = $(".main-menu-form");
+    var formItself = $("form");
+    var nameInput = formItself.find("#menu-contact-name");
+    var emailInput = formItself.find("#menu-contact-mail");
+    var messageInput = formItself.find("#menu-contact-message");
+    var errMsg = formItself.find(".menu-error-message");
     
     
     function formHandler() {
         
         menuCntBtn.on("click", function(e) {
             cntForm.fadeToggle(2000);
+            sldGalInfWrp.css("display", "none");
+        });
+        
+        formItself.on("submit", function(e) {
+            e.stopImmediatePropagation();
+            var nameVal = nameInput.val();
+            var emailVal = emailInput.val();
+            var msgVal = messageInput.val();
+            var errVal = "";
+            
+            if(nameVal.length < 3) {
+                errVal += "<h3>Imię jest za krótkie!</h3>";
+            }
+            if(msgVal.length < 15) {
+                errVal += "<h3>Treść wiadomości jest zbyt krótka!</h3>";
+            }
+            if(emailVal.indexOf("@") == -1 || emailVal.indexOf(".") == -1) {
+                errVal += "<h3>Adres email nie zawiera znaku @ lub . !</h3>";
+            }
+            if(errVal !== "") {
+                event.preventDefault();
+                errMsg.html(errVal);
+            }
         });
     }
     
