@@ -15,6 +15,8 @@ $(function() {
     var hmbgMenu = $(".mobile-hamburger-menu");
     var mainMenuWrp = $(".main-menu-wrapper");
     var infiniteSld = setInterval(sliderChange, 5000);
+    var mobileMenuItms = $(".main-menu-item");
+    console.log(mobileMenuItms);
     
     
     function menuGalMvmnt() {
@@ -25,6 +27,13 @@ $(function() {
             if($(window).width() < 800) {
                 menuGalGrd.fadeToggle(1000);
                 sldGalInfWrp.css("display", "none");
+                mobileMenuItms.each(function() {
+                    if($(this).index() == 0) {
+                        $(this).css("display", "none");
+                    } else if($(this).index() == 2) {
+                        $(this).css("display", "none");
+                    }    
+                });
             } else {
                 menuGalGrd.fadeToggle(2000);
                 if(sldGalInfWrp.hasClass("blurDown") == false) {
