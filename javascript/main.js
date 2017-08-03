@@ -16,7 +16,20 @@ $(function() {
     var mainMenuWrp = $(".main-menu-wrapper");
     var infiniteSld = setInterval(sliderChange, 5000);
     var mobileMenuItms = $(".main-menu-item");
-    console.log(mobileMenuItms);
+    var menuCntBtn = $(".main-menu-contact");
+    var cntForm = $(".main-menu-form");
+    
+    
+    function formHandler() {
+        
+        menuCntBtn.on("click", function(e) {
+            cntForm.fadeToggle(2000);
+        });
+    }
+    
+    formHandler();
+    
+    
     
     
     function menuGalMvmnt() {
