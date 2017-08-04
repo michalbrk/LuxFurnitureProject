@@ -40,13 +40,16 @@ $(function() {
             var errVal = "";
             
             if(nameVal.length < 3) {
-                errVal += "<h3>Imię jest za krótkie!</h3>";
+                errMsg.css("border", "1px solid red");
+                errVal += "<p>Imię jest za krótkie!<p>";
             }
             if(msgVal.length < 15) {
-                errVal += "<h3>Treść wiadomości jest zbyt krótka!</h3>";
+                errMsg.css("border", "1px solid red");
+                errVal += "<p>Treść wiadomości jest zbyt krótka!<p>";
             }
             if(emailVal.indexOf("@") == -1 || emailVal.indexOf(".") == -1) {
-                errVal += "<h3>Adres email nie zawiera znaku @ lub . !</h3>";
+                errMsg.css("border", "1px solid red");
+                errVal += "<p>Adres email nie zawiera znaku @ lub . !</p>";
             }
             if(errVal !== "") {
                 event.preventDefault();
