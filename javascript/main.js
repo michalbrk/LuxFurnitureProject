@@ -23,6 +23,23 @@ $(function() {
     var emailInput = formItself.find("#menu-contact-mail");
     var messageInput = formItself.find("#menu-contact-message");
     var errMsg = formItself.find(".menu-error-message");
+    var menuHmWrp = $(".menu-home-wrapper");
+    var mainHmBtn = $(".main-menu-home");
+    
+    
+    
+    
+    function menuHomeHandler() {
+        mainHmBtn.on("click", function(e) {
+            e.stopImmediatePropagation();
+            
+            menuHmWrp.fadeToggle(2000);
+            sldGalInfWrp.css("display", "none");
+        });
+    }
+    
+    menuHomeHandler();
+    
     
     
     function formHandler() {
