@@ -80,7 +80,13 @@
         height: 100vh;
     }
     
+    div[class$="text"] {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    
     .home-backgrd-wrapper,
+    .home-about-heading,
     .home-slogan-text,
     .home-info-wrapper,
     .home-info-heading,
@@ -92,6 +98,7 @@
         width: 100%;
         height: 12vh;
         position: absolute;
+        text-align: center;
     }
         
     .home-backgrd-wrapper {
@@ -100,8 +107,8 @@
     }
     
     .home-about-heading {
-        border: 1px solid pink;
         top: 0;
+        color: #DBBC94;
     }
     
     .home-backgrd-separator {
@@ -114,10 +121,12 @@
     }
     
     .home-slogan-text {
-        text-align: center;
-        border: 1px solid yellow;
-        padding: 0;
-        top: 12vh;
+        top: 14vh;
+        color: #865F2D;
+    }
+    
+    .home-slogan-text h5 {
+        margin-top: 0;
     }
     
     .home-info-wrapper {
@@ -127,39 +136,44 @@
     
     .home-info-heading {
         margin-top: 10vh;
-        border: 1px solid green;
-        top: 0;
+        top: 1vh;
+        color: #865F2D;
+    }
+    
+    .home-info-heading h5 {
+        margin-top: 6vh;
     }
     
     .home-info-separator {
+        width: 20vw;
+        left: 24vw;
+        border-top: 1px solid #fff;
         position: absolute;
         top: 12vh;
     }
     
     .home-first-text {
-        border: 1px solid pink;
+        padding-top: 3vh;
         font-size: 1.2rem;
         top: 24vh;
     }
     
     .home-first-heading {
-        border: 1px solid yellow;
         top: 36vh;
+        color: #865F2D;
     }
     
     .home-second-text {
-        border: 1px solid green;
         font-size: 1.2rem;
         top: 48vh;
     }
     
     .home-second-heading {
-        border: 1px solid pink;
         top: 60vh;
+        color: #865F2D;
     }
     
     .home-third-text {
-        border: 1px solid yellow;
         font-size: 1.2rem;
         top: 72vh;
     }
