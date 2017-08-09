@@ -28,10 +28,28 @@ $(function() {
     
     
     
+    function eventsHandling() {
+        
+        if(mainHmBtn.data("clicked") == true) {
+            menuGalGrd.css("display", "none");
+            cntForm.css("display", "none");
+        }
+        
+        //this function should check if the certain attribte is true and execute the condition or not
+        
+        //this function should be invoked before the logic of the buttons functions
+    }
+    
+//    eventsHandling();
+    
+    
+    
     
     function menuHomeHandler() {
         mainHmBtn.on("click", function(e) {
             e.stopImmediatePropagation();
+            
+            $(this).data("cliked", true);
             
             menuHmWrp.fadeToggle(2000);
             sldGalInfWrp.css("display", "none");
@@ -45,6 +63,10 @@ $(function() {
     function formHandler() {
         
         menuCntBtn.on("click", function(e) {
+            e.stopImmediatePropagation();
+            
+            $(this).data("cliked", true);
+            
             cntForm.fadeToggle(2000);
             sldGalInfWrp.css("display", "none");
         });
@@ -84,6 +106,10 @@ $(function() {
         
         menuGalBtn.on("click", function(e) {
             e.stopImmediatePropagation();
+            
+            $(this).data("cliked", true);
+            
+            eventsHandling();
             
             if($(window).width() < 800) {
                 menuGalGrd.fadeToggle(1000);
