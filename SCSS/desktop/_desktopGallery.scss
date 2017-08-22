@@ -39,4 +39,24 @@
     .odd-item-bColor {
         background-color: #392413 !important;
     }
+    
+    //Single item from gallery styles
+    .single-gallery-item {
+//        display: none;
+        display: flex;
+        position: fixed;
+        z-index: 99999;
+        top: 15vh;
+        left: 25vw;
+        width: 60vw;
+        background-color: #392413;
+    }
+    
+    .single-gallery-img {
+        width: 50%;
+    }
+    
+    .single-gallery-info {
+        width: 50%;
+    }
 }
