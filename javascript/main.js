@@ -25,8 +25,27 @@ $(function() {
     var errMsg = formItself.find(".menu-error-message");
     var menuHmWrp = $(".menu-home-wrapper");
     var mainHmBtn = $(".main-menu-home");
+    var singleGalItem = $(".single-gallery-item");
+    
+    console.log(singleGalItem);
     
     
+    function singleItemsGall() {
+        
+        galleryBackgnd.on("click", function(e) {
+            e.stopImmediatePropagation();
+            
+            
+        });
+        
+        
+        
+        
+    
+    
+    }
+    
+    singleItemsGall();
     
     
     function menuHomeHandler() {

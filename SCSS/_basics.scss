@@ -35,6 +35,10 @@ a {
     display: block;
 }
 
+.singleAppear {
+    display: flex;
+}
+
 .blurDown {
     opacity: 1;
     animation-name: blurringDown;
