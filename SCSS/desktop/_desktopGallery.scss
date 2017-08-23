@@ -42,14 +42,15 @@
     
     //Single item from gallery styles
     .single-gallery-item {
-//        display: none;
-        display: flex;
+        display: none;
+//        display: flex;
         position: fixed;
         z-index: 99999;
         top: 15vh;
-        left: 25vw;
+        left: 23vw;
         width: 55vw;
         background-color: #392413;
+        border-radius: 6px;
     }
     
     .single-gallery-img {
@@ -72,12 +73,24 @@
     .single-gallery-description {
         font-size: 1.3rem;
         color: #fff;
-        margin-right: 4%;
+        padding-right: 4%;
         text-align: center;
     }
     
     .single-gallery-separator {
         margin: 10% 4% 5% 0;
         border: 1px solid #fff;
+    }
+    
+    .single-gallery-button {
+        width: 40%;
+        height: 15%;
+        margin-left: 50%;
+        padding-top: 5%;
+        background-color: yellow;
+        border-radius: 6px;
+        text-align: center;
+        font-size: 1.5rem;
+        color: blue;
     }
 }
